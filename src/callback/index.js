@@ -8,3 +8,19 @@ function calc(num1, num2, callback) {
 }
 
 console.log(calc(6,2, sum));
+
+/*///////////*/
+
+function date(callback) {
+    console.log(new Date)
+    setTimeout(function () {
+        let date = new Date()
+        callback(date)
+    }, 3000)
+}
+
+function printDate(dateNew) {
+    console.log(dateNew)
+}
+
+date(printDate)
